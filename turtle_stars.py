@@ -2,12 +2,9 @@ from turtle import *
 import random
 
 stars = Turtle()
-rocket = Turtle()
-
-rocket.shape("rocket")
 
 bgcolor("black")
-stars.speed(10000)
+stars.speed(100)
 points = 36
 
 def draw_star(x, y, points, length, line, fill):
@@ -64,19 +61,9 @@ def draw_background():
 
         stars.pensize(1)
 
-def rocket():
-    while True:
-        rocket.left(random.randint(0, 360)
-        rocket.forward(random.randint(10, 100)
 
-
-            
-#"""""""""""""""""""""""""""""""""""""#
-#"""""""CREATE SEPERATE TURTLES"""""""#
-#"""""""""""""""""""""""""""""""""""""#
 
 draw_background()
-rocket()
              
 listen()    
 onkey(increase_points, "Up")
